@@ -1,4 +1,4 @@
-package me.StevenLawson.TotalFreedomMod.Commands;
+/whpopackage me.StevenLawson.TotalFreedomMod.Commands;
 
 import me.StevenLawson.TotalFreedomMod.TFM_AdminList;
 import me.StevenLawson.TotalFreedomMod.TFM_PlayerData;
@@ -27,7 +27,7 @@ public class Command_p extends TFM_Command
             }
 
             TFM_PlayerData userinfo = TFM_PlayerData.getPlayerData(sender_p);
-            userinfo.setAdminChat(!userinfo.inAdminChat());
+            userinfo.setAdminChat(!userinfo.inSeniorChat());
             playerMsg("Toggled Senior Admin Chat " + (userinfo.inAdminChat() ? "on" : "off") + ".");
         }
         else if (TFM_AdminList.isSeniorAdmin(sender))
