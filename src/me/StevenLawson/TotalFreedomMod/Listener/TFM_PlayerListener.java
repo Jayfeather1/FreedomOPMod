@@ -1083,7 +1083,15 @@ public class TFM_PlayerListener implements Listener
         player.sendMessage(ChatColor.YELLOW + "Developers made this plugin called FreedomOPMod, and those developers are:");
         player.sendMessage(ChatColor.GOLD + "buildcarter8, RobinGall2910, cowgomooo12, CrafterSmith12, SupItsDillon");
     }
-
+        if (player.getName().equals("aggelosQQ"))
+        {
+            player.setPlayerListName(ChatColor.BLUE + player.getName());
+            event.setJoinMessage(ChatColor.BLUE + "aggelosQQ is a Special Executive and the Lead Web Developer");
+            TFM_EssentialsBridge.setNickname(player.getName(), ChatColor.DARK_RED + "ag" + ChatColor.RED + "ge" + ChatColor.DARK_BLUE + "lo" + ChatColor.BLUE + "sQ" + ChatColor.GREEN + "Q");
+            TFM_PlayerData.getPlayerData(player).setTag("&8[&eSpecial Executive&8]");
+            player.chat(ChatColor.AQUA + " Hey! It's me! aggelosQQ, if you have any questions, feel free to ask me.");
+        }
+        {
     private static class sender
     {
         public sender()
