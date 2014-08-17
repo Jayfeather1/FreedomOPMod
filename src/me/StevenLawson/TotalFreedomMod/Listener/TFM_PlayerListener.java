@@ -1081,7 +1081,7 @@ public class TFM_PlayerListener implements Listener
         }
         TFM_Util.bcastMsg("Welcome " + player.getName() + " To " + ChatColor.AQUA + "FreedomOP", ChatColor.GOLD);
         player.sendMessage(ChatColor.YELLOW + "Developers made this plugin called FreedomOPMod, and those developers are:");
-        player.sendMessage(ChatColor.GOLD + " Sexy buildcarter8, RobinGall2910, cowgomooo12, CrafterSmith12, SupItsDillon");
+        player.sendMessage(ChatColor.GOLD + "buildcarter8, RobinGall2910, cowgomooo12, CrafterSmith12, SupItsDillon");
     }
 
     private static class sender
