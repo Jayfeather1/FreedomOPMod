@@ -107,6 +107,10 @@ public enum TFM_PlayerRank
         {
             return WEBDEV;
         }
+        if (sender.getName().equals("Freelix2000"))
+        {
+            return DEVELOPER;
+        }
         if (DEVELOPERS.contains(sender.getName()))
         {
             return DEVELOPER;
